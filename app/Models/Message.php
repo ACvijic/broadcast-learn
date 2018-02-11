@@ -107,53 +107,14 @@ class Message extends Model implements AdminPolicyInterface
         $this->attributes['tags'] = '#' . implode('#,#', $value) . '#';
     }
     
-    /* ========= Relations ========= */
-    // EXAMPLES:
     /**
-     *  Points to PushMessages related to this Message instance
+     *  Points to User related to this Message
      * 
      *  @return object
      *  @access public
      */
-    function pushMessages() 
+    public function user()
     {
-        return $this->hasMany(PushMessage::class, 'application_id');
-    }
-    
-    /**
-     *  Points to MessageInstances related to this Message instance
-     * 
-     *  @return object
-     *  @access public
-     */
-    function applicationInstances() 
-    {
-        return $this->hasMany(MessageInstance::class, 'application_id');
-    }
-    
-    /**
-     *  Points to <b>active</b> MessageInstances related to this 
-     *  Message instance
-     * 
-     *  @return object
-     *  @access public
-     */
-    function activeMessageInstances() 
-    {
-        return $this
-            ->applicationInstances()
-            ->where('status', self::STATUS_VISIBLE);
-    }
-    
-    /**
-     *  Defines the relationship towards an Owner 
-     *  (User that owns the application)
-     * 
-     *  @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     *  @access public
-     */
-    public function owner()
-    {
-        return $this->belongsTo(User::class, 'owner_id');
+        return $this->belongsTo(User::class);
     }
 }
