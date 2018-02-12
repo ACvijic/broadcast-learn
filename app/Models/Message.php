@@ -16,7 +16,7 @@ use App\Policies\Interfaces\AdminPolicyInterface;
  *  @link       http://broadcast.learn/
  *  @since      Class available since Release 1.0.0
  */
-class Message extends Model implements AdminPolicyInterface
+class Message extends Model
 {
     /**
      *  The table associated with the model
@@ -55,18 +55,6 @@ class Message extends Model implements AdminPolicyInterface
         'show'   => 'push_messages_status',
         'delete' => 'delete'
     ];
-    
-    /**
-     * The "booting" method of the model.
-     *
-     * @return void
-     */
-    protected static function boot()
-    {
-        parent::boot();
-
-        static::addGlobalScope(new AgeScope);
-    }
     
     /* ========= Mutators & Accessors ========= */
     // EXAMPLES:
