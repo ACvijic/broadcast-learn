@@ -3,11 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/aleksa/projects/broadcast-learn/.env</file>
-            <file>file:/home/aleksa/projects/broadcast-learn/storage/logs/laravel.log</file>
-            <file>file:/home/aleksa/projects/broadcast-learn/resources/assets/js/bootstrap.js</file>
-            <file>file:/home/aleksa/projects/broadcast-learn/config/app.php</file>
-            <file>file:/home/aleksa/projects/broadcast-learn/config/broadcasting.php</file>
+            <file>file:/home/aleksa/projects/broadcast-learn/app/Events/MessageSent.php</file>
+            <file>file:/home/aleksa/projects/broadcast-learn/config/auth.php</file>
+            <file>file:/home/aleksa/projects/broadcast-learn/package.json</file>
+            <file>file:/home/aleksa/projects/broadcast-learn/resources/assets/js/app.js</file>
+            <file>file:/home/aleksa/projects/broadcast-learn/database/factories/ModelFactory.php</file>
+            <file>file:/home/aleksa/projects/broadcast-learn/resources/views/chat.blade.php</file>
+            <file>file:/home/aleksa/projects/broadcast-learn/config/services.php</file>
+            <file>file:/home/aleksa/projects/broadcast-learn/app/Http/Controllers/Auth/RegisterController.php</file>
+            <file>file:/home/aleksa/projects/broadcast-learn/routes/channels.php</file>
+            <file>file:/home/aleksa/projects/broadcast-learn/app/Http/Controllers/ChatsController.php</file>
             <file>file:/home/aleksa/projects/broadcast-learn/resources/views/layouts/app.blade.php</file>
         </group>
     </open-files>
